@@ -1,0 +1,349 @@
+﻿*{
+	padding:0;
+	margin:0;
+	transition:all 0.5s ease 0s;
+	-webkit-transition:all 0.5s ease 0s;
+}
+body{
+	min-width:1200px;
+}
+.container{
+	width:100%;
+	height:1500px;
+	background:url(../images/fBack.jpg);
+	background-size:cover;
+}
+
+
+/*导航栏样式*/
+.title{
+	width:100%;
+	height:50px;
+	min-width:735px;
+	position:fixed;
+	background:rgba(256,256,256,0.8);
+	color:#000;
+	z-index:1000;
+}
+.logo{
+	float:left;
+	height:45px;
+}
+.title ul{
+	list-style-type:none;
+	float:right;
+	height:50px;
+	margin-right:20px;
+}
+.title li{
+	display:inline-block;
+	height:45px;
+	line-height:45px;
+	margin:0 10px;
+	transition:all 0.5s ease 0s;
+	-webkit-transition:all 0.5s ease 0s;
+}
+.title li a{
+	display:inline-block;
+	font-size:20px;
+	color:#800080;
+	font-weight:400%;
+	font-family:"arial";
+	font-weight:bold;
+	width:100%;
+	text-decoration:none;
+	border-bottom:5px solid transparent;
+}
+.title li a:hover{
+	border-bottom:5px solid #4cc5d6;
+}
+.userhead{
+	float:right;
+	width:50px;
+	border-radius:50%;
+	padding:5px;
+	margin-right:10px;
+}
+.userhead img{
+	width:40px;
+	border-radius:50%;
+}
+.userhead:hover img{
+	cursor:pointer;
+}
+.userhead:hover .userinfo{
+	display:block;
+}
+.userinfo{
+	position:relative;
+	right:150px;
+	top:10px;
+	width:200px;
+	height:138px;
+	background:rgba(0,0,0,0.5);
+	color:#fff;
+	display:none;
+}
+.triangle{
+	position:relative;
+	top:-10px;
+	left:160px;
+	content:'';
+	width:0;
+	height:0;
+	border-bottom:10px solid rgba(0,0,0,0.5);
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+}
+.userinfoContent{
+	padding:10px;
+	font-family:"微软雅黑";
+}
+#userName{
+	padding-right:10px;
+	padding-bottom:10px;
+	font-size:24px;
+	font-weight:bold;
+}
+.userinfoContent p{
+	font-size:14px;
+	height:40px;
+}
+.userinfoContent p:focus{
+	background:#fff;
+	color:#000;
+}
+.userinfo input{
+	width:66.6px;
+	height:40px;
+	border:none;
+	outline:none;
+	display:inline-block;
+}
+.userinfo input:hover{
+	cursor:pointer;
+}
+#userInfoLeftBtn{
+	background:url(../images/userInfoLeftBtn.png);
+	background-size: cover;
+}
+#userInfoMiddleBtn{
+	background:url(../images/userInfoMiddleBtn.png);
+	background-size: cover;
+}
+#userInfoRightBtn{
+	background:url(../images/userInfoRightBtn.png);
+	background-size: cover;
+}
+
+
+/*卡标题栏位置用*/
+.mb1{
+	width:100%;
+	height:80px;
+}
+
+
+/*左边区域我的联系人的样式*/
+.left{
+	width:300px;
+	height:515px;
+	position:fixed;
+	overflow:hidden;
+	margin:20px;	
+}
+.content{
+	position:relative;
+	width:300px;
+	padding-top:5px;
+	font-size:18px;
+	font-weight:bold;
+	font-family:"微软雅黑";
+}
+.search{
+	position:absolute;
+	width:180px;
+	height:25px;
+	left:50%;
+	margin-left:-100px;
+	margin-top:20px;
+	outline:none;
+}
+#searchBtn{
+	background:url(../images/searchBtn.png);
+	background-size: cover;
+	border:none;
+	outline:none;
+	position:absolute;
+	width:28px;
+	height:28px;
+	left:50%;
+	margin-left:83px;
+	margin-top:20px;
+}
+.users0{
+	width:300px;
+	position:absolute;
+	margin-top:50px;
+	margin-left:30px;
+}
+.users2{
+	width:300px;
+	position:absolute;
+	margin-left:30px;
+	margin-top:50px;
+	left:200%;
+}
+.users1{
+	width:300px;
+	position:absolute;
+	margin-left:30px;
+	margin-top:50px;
+	left:100%;
+}
+.user{
+	position:relative;
+	display:inline-block;
+	width:100px;
+	height:100px;
+	margin:10px;
+	overflow:hidden;
+}
+.left img{
+	width:100px;
+	position:absolute;
+	border-radius:50%;
+	z-index:10;
+}
+.left span{
+	position:absolute;
+	line-height:100px;
+	width:100px;
+	text-align:center;
+}
+.user:hover img{
+	opacity:0.2;
+	border-radius:50%;
+}
+.pre{
+	height:50px;
+	width:50px;
+	background:url(../images/pre.png);
+	background-size: cover;
+	border:none;
+	outline:none;
+	position:absolute;
+	bottom:35px;
+	left:60px;
+	display:none;
+}
+.next{
+	height:50px;
+	width:50px;
+	background:url(../images/next.png);
+	background-size: cover;
+	border:none;
+	outline:none;
+	position:absolute;
+	bottom:35px;
+	left:190px;
+	display:none;
+}
+.left:hover .pre,
+.left:hover .next{
+	display:block;
+	cursor:pointer;
+}
+
+
+/*动态区域*/
+.right{
+	position:absolute;
+	height:1400px;
+	min-width:500px;
+	left:300px;
+	right:20px;
+	top:80px;
+}
+.head{
+	width:80px;
+	border-radius:10px;
+}
+.message{
+	width:80%;
+	min-width:720px;
+	position:relative;
+	left:50%;
+	margin-left:-40%;
+	margin-top:40px;
+	padding:20px;
+	color:#fff;
+	font-family:"Times New Roman";
+	font-size:20px;
+	background:rgba(0,0,0,0.3);
+}
+.userName{
+	padding-left:20px;
+	margin-top:10px;
+	margin-bottom:5px;
+	color:#fff;
+	font-size:30px;
+	font-weight:bold;
+	font-family:"Times New Roman";
+}
+.message:hover{
+	box-shadow:0px 0px 50px #000;
+	-moz-box-shadow:0px 0px 50px #000;
+	-webkit-box-shadow:0px 0px 50px #000
+	transform:translate(-10px,0px);
+	-webkit-transform:translate(-10px,0px);
+}
+.mContent{
+	width:100%;
+	margin:10px 0;
+}
+.mContent img{
+	height:150px;
+	padding:5px;
+	position:relative;
+}
+.likeBtn,.commentBtn{
+	width:30px;
+	height:30px;
+	float:right;
+	margin-left:10px;
+}
+.comment{
+	position:absolute;
+	right:100px;
+	background:#fff;
+	height:22px;
+	width:450px;
+	border-radius:5px;
+	outline:none;
+	border:none;
+	padding-left:3px;
+	display:none;
+}
+.likeBtn{
+	background:url(../images/like.png);
+	background-size: cover;
+	border:none;
+	outline:none;
+}
+.likeBtn:hover,.commentBtn:hover{
+	transform:scale(1.3);
+	cursor:pointer;
+}
+.commentBtn{
+	background:url(../images/comment.png);
+	background-size: cover;
+	border:none;
+	outline:none;
+}
+.timeComment span{
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	font-family:"Times New Roman";
+}
