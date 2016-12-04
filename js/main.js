@@ -12,6 +12,21 @@ window.onload=function(){
 	pick('pFImg').style.minWidth=screenWidth-50+'px';
 	pick('footerMask').style.minWidth=screenWidth-50+'px';
 	
+	
+	/*删除日志操作*/
+	var deleteArticle=document.getElementsByClassName('deleteArticle');
+	for(var i=0;i<deleteArticle.length;i++){
+		deleteArticle[i].onclick=function(ev){
+			var oEvent=ev || event;   
+			var obj=oEvent.srcElement?oEvent.srcElement:oEvent.target;
+			while(!(obj.nextSibling.nodeType==1)){
+				obj=obj.nextSibling;
+			}	
+			article=obj.parentNode;
+			article.style.display="none";
+		}
+	}
+	
 	/*文本编辑框开启、关闭按钮*/
 	pick('write').onclick=function(){
 		pick("addLog").style.display='block';
